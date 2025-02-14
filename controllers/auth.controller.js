@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import { JWT_EXPIRES_IN, JWT_SECRET } from "../config/env.js";
-import User from "../models/user.model";
+import User from "../models/user.model.js";
 
 export const signUp = async (req, res, next) => {
 	//* Implement the registration logic
