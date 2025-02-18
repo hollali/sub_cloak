@@ -29,4 +29,4 @@ const authorize = async (req, res, next) => {
     }
 }
 
-export default authorize; // Adjust the path as necessary
+export default authorize;
