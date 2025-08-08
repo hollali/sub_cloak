@@ -19,7 +19,7 @@ export const signUp = async (req, res, next) => {
 			throw error;
 		}
 
-		//? Hash the password]
+		//? Hash the password
 		const salt = await bcrypt.genSalt(10);
 		const hashedPassword = await bcrypt.hash(password, salt);
 
